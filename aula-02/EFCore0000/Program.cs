@@ -25,7 +25,7 @@ context.SaveChanges();
 Console.WriteLine("USERS");
 foreach (var u in context.Users)
 {
-    Console.WriteLine("ID: {0} - Name: {1} - Group: {2} ", u.Id, u.Name, u.Group.Name);
+    Console.WriteLine("ID: {0} - Name: {1} - Group: {2} ", u.Id, u.Name, u.Group?.Name);
 }
 
 Console.WriteLine("GROUPS");
